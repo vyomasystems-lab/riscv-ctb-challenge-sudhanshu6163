@@ -10,8 +10,7 @@ RVTEST_CODE_BEGIN
   .option norvc
   li TESTNUM, 2
 
-	# Preparation
-	li z4, 0x12345678 
+	# Preparation 
 	li s9, 0x06aa934a
 	li a2, 0xbb90907f
 	li s7, 0xbef962bf
@@ -15853,7 +15852,7 @@ RVTEST_CODE_BEGIN
 	and s3, tp, s10
 	and a7, a0, s3
 	and s3, a5, a5
-	and s7, ra, z4
+	and s7, ra, t1
 	and s7, ra, ra
 	and s6, t3, s10
 	and t1, s2, a6
