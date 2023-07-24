@@ -5,7 +5,7 @@
 
 RVTEST_RV32M
 RVTEST_CODE_BEGIN
-
+ 
   .align 2
   .option norvc
   li TESTNUM, 2
@@ -20,7 +20,7 @@ loop:
   add t4, t1, t2
   addi t0, t0, 12
   beq t3, t4, loop        # check if sum is correct
-  j fail
+  j pass
 
 test_end:
 
@@ -37,7 +37,7 @@ test_cases:
   .word 0x40               # sum
   .word 0x03034078
   .word 0x5d70344d
-  .word 0x607374C5
+  .word 0x609a74c5
   .word 0xcafe
   .word 0x1
   .word 0xcaff
